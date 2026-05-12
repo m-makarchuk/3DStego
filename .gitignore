@@ -1,3 +1,4 @@
+# --- Android & Gradle ---
 # Gradle files
 .gradle/
 build/
@@ -32,3 +33,11 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# --- Rust & Cargo ---
+# Cargo generated compilation and build artifacts
+**/target/
+/target/
+
+# Cargo backup files
+**/*.rs.bk
