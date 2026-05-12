@@ -4,8 +4,6 @@ Mobile steganographic data protection app based on 3D model geometry and graph s
 ## 🏆 About the Project
 **3DStego** is an autonomous mobile software suite designed for advanced steganographic data protection. By integrating the geometry of 3D models with graph spectral analysis, it provides a highly secure and robust method for hiding data within 3D objects. The embedded data remains highly resilient to affine transformations.
 
-*This project was recognized with a 4th-degree diploma in the System Software category at the ISEF Ukraine national final.*
-
 ## ⚙️ Architecture & Tech Stack
 The application features a hybrid architecture designed to maximize computational performance while minimizing memory footprint:
 
