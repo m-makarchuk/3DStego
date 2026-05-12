@@ -28,16 +28,16 @@ To build and run this project locally, you will need:
 
 ### Build Instructions
 1. Clone the repository:
+   ```bash
    git clone [https://github.com/m-makarchuk/3DStego.git](https://github.com/m-makarchuk/3DStego.git)
    cd 3DStego
 2. Make sure you have the required Rust targets for Android:
-    Bash
+   ```bash
+   rustup target add aarch64-linux-android armv7-linux-androideabi x86_64-linux-android
 
-    rustup target add aarch64-linux-android armv7-linux-androideabi x86_64-linux-android
+3.Open the project in Android Studio. Gradle will automatically trigger the Cargo build for the Rust core libraries during the project sync.
 
-    Open the project in Android Studio. Gradle will automatically trigger the Cargo build for the Rust core libraries during the project sync.
-
-    Build and run the app on your physical device or emulator.
+4. Build and run the app on your physical device or emulator.
 
 📄 License
 
