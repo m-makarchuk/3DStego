@@ -1,42 +1,65 @@
-# 3DStego
-Mobile steganographic data protection app based on 3D model geometry and graph spectral analysis. Core in Rust, UI in Kotlin.
+<div align="center">
+  <h1>3DStego</h1>
+
+  <p>
+    <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
+    <img src="https://img.shields.io/badge/Kotlin-B125EA?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
+    <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
+    <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge" alt="License" />
+  </p>
+
+</div>
 
 ## 🏆 About the Project
-**3DStego** is an autonomous mobile software suite designed for advanced steganographic data protection. By integrating the geometry of 3D models with graph spectral analysis, it provides a highly secure and robust method for hiding data within 3D objects. The embedded data remains highly resilient to affine transformations.
+
+<p align="justify">
+  <b>3DStego</b> is an autonomous mobile software suite designed for advanced steganographic data protection. By integrating the geometry of 3D models with graph spectral analysis, it provides a highly secure and robust method for hiding data within 3D objects. The embedded data remains highly resilient to affine transformations.
+</p>
 
 ## ⚙️ Architecture & Tech Stack
-The application features a hybrid architecture designed to maximize computational performance while minimizing memory footprint:
 
-* **User Interface:** Built natively for Android using **Kotlin** following the MVVM architectural pattern.
-* **Computational Core:** Developed in **Rust** to efficiently handle heavy mathematical operations and spectral analysis.
-* **Integration:** The communication between the Kotlin UI and the Rust core is implemented via a **JNI bridge** using **Zero-Copy** technology, ensuring zero overhead during large data transfers.
-* **3D Rendering:** Powered by **Google Filament** for high-quality, real-time visualization of 3D models on mobile devices.
+<p align="justify">
+  The application features a hybrid architecture designed to maximize computational performance while minimizing memory footprint on mobile devices:
+</p>
+
+<ul>
+  <li><div align="justify"><b>User Interface:</b> Built natively for Android using <b>Kotlin</b> following the MVVM architectural pattern.</div></li>
+  <li><div align="justify"><b>Computational Core:</b> Developed in <b>Rust</b> to efficiently handle heavy mathematical operations and spectral analysis.</div></li>
+  <li><div align="justify"><b>Integration:</b> Communication between the Kotlin UI and the Rust core is implemented via a <b>JNI bridge</b> using <b>Zero-Copy technology</b>, ensuring zero overhead during large data transfers.</div></li>
+  <li><div align="justify"><b>3D Rendering:</b> Powered by <b>Google Filament</b> for high-quality, real-time visualization of 3D models on mobile devices.</div></li>
+</ul>
 
 ## 🔐 Algorithms & Cryptography
-* **Spectral Decomposition:** Utilizes the **Lanczos algorithm** to optimize the spectral decomposition of graphs, drastically improving processing times for complex 3D meshes.
-* **Encryption:** All payload data is strictly secured using **AES-256-GCM** cryptographic encryption before the steganographic embedding process begins.
 
-## 🚀 Getting Started
+<ul>
+  <li><div align="justify"><b>Spectral Decomposition:</b> Utilizes the <b>Lanczos algorithm</b> to optimize the spectral decomposition of graphs, drastically improving processing times for complex 3D meshes.</div></li>
+  <li><div align="justify"><b>Encryption:</b> All payload data is strictly secured using <b>AES-256-GCM</b> cryptographic encryption <i>before</i> the steganographic embedding process begins.</div></li>
+</ul>
 
-### Prerequisites
-To build and run this project locally, you will need:
-* Android Studio (latest stable release)
-* Rust toolchain (`rustup`, `cargo`)
-* Android NDK and CMake (can be installed via Android Studio SDK Manager)
+## 📥 Installation (APK Release)
 
-### Build Instructions
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/m-makarchuk/3DStego.git](https://github.com/m-makarchuk/3DStego.git)
-   cd 3DStego
-2. Make sure you have the required Rust targets for Android:
-   ```bash
-   rustup target add aarch64-linux-android armv7-linux-androideabi x86_64-linux-android
+<p align="justify">
+  Currently, 3DStego is available as a pre-compiled Android package (<code>.apk</code>).
+</p>
 
-3.Open the project in Android Studio. Gradle will automatically trigger the Cargo build for the Rust core libraries during the project sync.
+<ol>
+  <li><div align="justify">Navigate to the <a href="../../releases">Releases</a> section of this repository.</div></li>
+  <li><div align="justify">Download the latest <code>3DStego.apk</code> file to your Android device.</div></li>
+  <li><div align="justify">Open the downloaded file. <i>(Note: You may need to enable "Install unknown apps" in your Android security settings)</i>.</div></li>
+  <li><div align="justify">Follow the on-screen instructions to install and launch the application.</div></li>
+</ol>
 
-4. Build and run the app on your physical device or emulator.
+## 🗺️ Roadmap & Open Source
 
-📄 License
+<p align="justify">
+  This project is built with a strict commitment to <b>Free and Open Source Software (FOSS)</b> principles.
+</p>
+<p align="justify">
+  Currently, only the compiled APK is available in this repository for testing and demonstration purposes. The complete source code (both the Kotlin UI and the Rust core libraries), along with detailed build instructions for Android Studio and Cargo, is being prepared for a full public release in the near future.
+</p>
 
-This project is licensed under the Apache License 2.0 - see the LICENSE file for details. Built with a commitment to Free and Open Source Software principles.
+## 📄 License
+
+<p align="justify">
+  Once the source code is published, this project will be licensed under the <b>Apache License 2.0</b>.
+</p>
